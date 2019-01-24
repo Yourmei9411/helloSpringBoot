@@ -1,0 +1,17 @@
+package caffrey.controller;
+
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class HelloWorld {
+
+	@RequestMapping("/")
+	public String helloSpringBoot()
+	{
+		System.out.println("helloSpringBoot");
+		
+		return "helloSpringBoot";
+	}
+	
+}
